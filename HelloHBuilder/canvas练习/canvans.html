@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<canvas id="drawing" width="200" height="200"></canvas>
+		<script>
+			var d=document.getElementById("drawing");
+			var context=d.getContext("2d");
+			context.fillStyle="red";
+			context.beginPath();
+			context.arc(70,18,15,0,Math.PI*2,true);
+			context.closePath();
+			context.fill();
+		</script>
+	</body>
+</html>

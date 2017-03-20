@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>二级菜单</title>
+		<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+			#nav{
+				background-color: #CCCCCC;
+				width: 1000px;
+				height: 50px;
+				margin: 0 auto;
+			}
+			#nav ul{
+				border: 1px solid red;
+				height: 50px;
+				width: 510px;
+				margin: 0 auto;
+			}
+			#nav ul li{
+				border: 1px solid #0976B4;
+				height: 50px;
+				float: left;
+				list-style: none;
+				line-height: 50px;
+				width: 100px;
+			}
+			#nav ul li a{
+				text-decoration: none;
+				display: block;
+				text-align: center;
+			}
+			#nav ul li ul{
+				display: none;
+				border: none;
+			}
+			#nav ul li ul li{
+				border: 1px solid #CCCCCC;
+				line-height: 30px;
+				float: none;
+				height: 30px;
+				background-color: red;
+			}
+			#nav ul li:hover ul{
+				display: block;
+				border: none;
+			}
+			#nav ul li:hover ul li{
+				background-color: black;
+				
+			}
+			#nav ul li:hover ul li a{
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="nav">
+			<ul>
+				<li><a href="#">main</a>
+					<ul>
+						<li><a href="#">123</a></li>
+						<li><a href="#">123</a></li>
+						<li><a href="#">123</a></li>
+					</ul>
+				</li>
+				<li><a href="#">html</a>
+					<ul>
+						<li><a href="#">123</a></li>
+						<li><a href="#">123</a></li>
+						<li><a href="#">123</a></li>
+					</ul>
+				</li>
+				<li><a href="#">css</a>
+					<ul>
+						<li><a href="#">123</a></li>
+						<li><a href="#">123</a></li>
+						<li><a href="#">123</a></li>
+					</ul>
+				</li>
+				<li><a href="#">javascrip</a>
+					<ul>
+						<li><a href="#">123</a></li>
+						<li><a href="#">123</a></li>
+						<li><a href="#">123</a></li>
+					</ul>
+				</li>
+				<li><a href="#">jquery</a></li>
+			</ul>
+		</div>
+		<div id="msg-box">
+			
+		</div>
+	</body>
+</html>

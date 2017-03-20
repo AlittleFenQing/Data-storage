@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>javas百度表单验证</title>
+		<script type="text/javascript">
+		//验证表单
+			function checkForm(){
+				//账户的信息
+				var userId=document.getElementById('userId').value;
+				//密码的信息
+				var pass=document.getElementById('password').value;
+				if(userId.length==0){
+					document.getElementById('errorId').innerHTML='账号不能为空号';
+					return false;
+				}
+				else{
+					document.getElementById('errorId').innerHTML='';
+				}
+				if(pass.length==0){
+					document.getElementById('errorpw').innerHTML='密码不能为空号！';
+					return false;
+				}
+				else{
+					document.getElementById('errorpw').innerHTML='';
+				}
+			}
+		</script>
+	</head>
+	<body>
+		
+		<form action="" method="get" onsubmit="return checkForm()">
+			<div class="" align="center">
+				<h2>用户登录</h2>
+				<hr width="30%"/>
+				
+				账号:<input type="text" name="userId" id="userId" value="" /><div id="errorId" style="color: red; display: inline-block;"></div><br>
+				密码:<input type="password" name="password" id="password" value="" /><div id="errorpw" style="color: red;display: inline-block;"></div><br>
+				<input type="submit" value="用户登录" />
+			</div>
+		</form>
+		
+	</body>
+</html>

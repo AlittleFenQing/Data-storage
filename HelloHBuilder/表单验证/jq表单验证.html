@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>javas百度表单验证</title>
+		<script type="text/javascript" src="jquery-2.2.0.min.js"></script>
+		<script type="text/javascript">
+		//验证表单
+		$(function(){
+			$("#f1").submit(function(){
+				var userId=$("#userId").val();
+				var password=$("#password").val();
+				if(userId.length==0){
+					$('#errorId').html('账号不能为空号');
+					return false;
+				}
+				else{
+					$('#errorId').html('');
+				}
+				if(pass.length==0){
+					$('#errorpw').html('密码不能为空号！');
+					return false;
+				}
+				else{
+					$('#errorpw').html(' ');
+				}
+			});
+		});
+		
+		</script>
+	</head>
+	<body>
+		
+		<form action="" method="get" id="f1">
+			<div class="" align="center">
+				<h2>用户登录</h2>
+				<hr width="30%"/>
+				
+				账号:<input type="text" name="userId" id="userId" value="" /><div id="errorId" style="color: red; display: inline-block;"></div><br>
+				密码:<input type="password" name="password" id="password" value="" /><div id="errorpw" style="color: red;display: inline-block;"></div><br>
+				<input type="submit" value="用户登录" />
+			</div>
+		</form>
+		
+	</body>
+</html>

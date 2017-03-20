@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>css样式轮播图</title>
+	</head>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.box{
+			width: 600px;
+			height: 400px;
+			margin: 0 auto;
+			margin-top: 100px;
+			border: 1px solid red;
+			overflow: hidden;
+		}
+		.img-box{
+			list-style: none;
+			width: 300%;
+			height: 100%;
+			-webkit-animation:slide1 3s ease-out infinite;/*css3的动画属性*/
+		}
+		.img-box li{
+			float: left;
+			width: 600px;
+			height: 100%;
+		}
+		.img-box li img{
+			float: left;
+			width: 600px;
+			height: 100%;
+		}
+		/*:nth-child(n) 选择器匹配属于其父元素的第 N 个子元素，不论元素的类型。*/
+		.img-box li:nth-child(1){
+			background:#6bacef;
+		}
+		.img-box li:nth-child(2) {
+ 			 background:#297cd3;
+		}
+
+		.img-box li:nth-child(3) {
+ 			 background:#01254a;
+		}
+		/*@keyframes 动画指定名称*/
+		@-webkit-keyframes slide1 {
+		  0% { margin-left:0;}
+		  23% { margin-left:0;}
+		  33% { margin-left:-600px;}
+		  56% { margin-left:-600px;}
+		  66% { margin-left:-1200px;}
+		  90% { margin-left:-1200px;}
+		  100% {margin-left:0;}
+		}
+		@-moz-keyframes slide1 {
+		  0% { margin-left:0;}
+		  23% { margin-left:0;}
+		  33% { margin-left:-600px;}
+		  56% { margin-left:-600px;}
+		  66% { margin-left:-1200px;}
+		  90% { margin-left:-1200px;}
+		  100% {margin-left:0;}
+		}
+		@-ms-keyframes slide1 {
+		  0% { margin-left:0;}
+		  23% { margin-left:0;}
+		  33% { margin-left:-600px;}
+		  56% { margin-left:-600px;}
+		  66% { margin-left:-1200px;}
+		  90% { margin-left:-1200px;}
+		  100% {margin-left:0;}
+		}
+		@-0-keyframes slide1 {
+		  0% { margin-left:0;}
+		  23% { margin-left:0;}
+		  33% { margin-left:-600px;}
+		  56% { margin-left:-600px;}
+		  66% { margin-left:-1200px;}
+		  90% { margin-left:-1200px;}
+		  100% {margin-left:0;}
+		}
+		#nav ul li{
+			margin-left: 400px;
+			width: 0px;
+			height: 0px;
+			border:15px solid transparent ;
+			border-top-color:#2DCB70;
+		
+		}
+	</style>
+	<body>
+		<div class="box">
+			<ul class="img-box">
+				<li><img src="444.jpg"/></li>
+				<li><img src="111.jpg"/></li>
+				<li><img src="222.jpg"/></li>
+			</ul>
+		</div>
+		<div id="nav">
+			<ul>
+				<li><a href="#"></li>
+			</ul>
+		</div>
+	</body>
+</html>

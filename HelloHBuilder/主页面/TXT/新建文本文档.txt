@@ -1,0 +1,3 @@
+CSS animations和transitions再加上点JavaScript就可以实现硬件加速动画，而且其交互效果比大多数JavaScript库更高效。
+
+1.鼠标经过不同标签触发不同背景

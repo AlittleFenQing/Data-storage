@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>主页面</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+		<link rel="stylesheet" type="text/css" href="css/BeiHuaindex.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	</head>
+
+	<body style="background: #F0F0F0;">
+		<div id="loading" style="width:100%;height:100%;position:fixed;z-index:2000;background:rgba(0,0,0,0.9);text-align:center;">
+			<i class="fa fa-spinner fa-spin fa-5x" style="color:white;padding: 100px 0;"></i>
+		</div>
+		<div id="User" class="lazyloading">
+			<p class="h2">LOGIN</p>
+			<form class="form-horizontal">
+				<!--[禁用状态] .disabled -->
+				<!--[只读状态] .readonly -->
+				<!--[校验状态] 为form-group添加.has-(success/warning/error) -->
+				<div class="form-group has-feedback" id="form-UserName">
+					<label for="num01" class="sr-only">Email address</label>
+					<input type="text" class="form-control" id="userName" placeholder="Please input PassWord">
+					<span class="glyphicon glyphicon-exclamation-sign form-control-feedback" aria-hidden="true"></span>
+					<span id="PassWordSpan" class="sr-only">PassWord</span>
+				</div>
+				<div class="form-group has-feedback" id="form-PassWord">
+					<label for="num01" class="sr-only">Email address</label>
+					<input type="password" class="form-control" id="passWord" placeholder="Please input PassWord">
+					<span class="glyphicon glyphicon-exclamation-sign form-control-feedback" aria-hidden="true"></span>
+					<span id="PassWordSpan" class="sr-only">PassWord</span>
+				</div>
+				<div class="form-group">
+					<div class="checkbox">
+						<label>
+						<input type="checkbox">
+						<p>Remember me</p>
+					</label>
+					</div>
+				</div>
+				<div class="form-group" id="login">
+					<div><button type="button" class="btn btn-info">&nbsp;&nbsp;登录&nbsp;&nbsp;</button></div>
+					<a href="#" class="btn btn-default atn-1" role="button"><i class="fa fa-check"></i> LOGIN with QQ</a>
+					<a href="#" class="btn btn-default atn-2" role="button"><i class="fa fa-check"></i> LOGIN with Google+</a>
+				</div>
+			</form>
+			<div class="slide"><i class="fa fa-align-justify fa-1x"></i></div>
+		</div>
+		<script type="text/javascript">
+			window.onload = function() {
+				$('#loading').css('display', 'none');
+				$("body>div:not(body>div:nth-child(2))").on('click', function() {
+					$('#User').css('right', '-380px');
+				});
+				$('#User>.slide').on('click', function() {
+					if($('#User').css('right') == '0px') {
+						$('#User').css('right', '-380px');
+					} else {
+						$('#User').css('right', '0px');
+					}
+				});
+			}
+		</script>
+		<nav class="navbar navbar-inverse navbar-fixed-top lazyloading">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+					<a href="#" class="navbar-brand"><img src="" alt="">慕课网</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">首页</a>
+						</li>
+						<li>
+							<a href="#">数码分类</a>
+						</li>
+						<li>
+							<a href="#">苹果手机</a>
+						</li>
+						<li>
+							<a href="#" class="hidden-xs">笔记本</a>
+						</li>
+						<li>
+							<a href="#" class="hidden-xs">平板电脑</a>
+						</li>
+						<li>
+							<a href="#" class="hidden-sm">智能手表</a>
+						</li>
+						<li>
+							<a href="#" class="hidden-sm">数码相机</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#">登录</a>
+						</li>
+						<li>
+							<a href="#">注册</a>
+						</li>
+					</ul>
+					<p class="navbar-text navbar-right hidden-md hidden-xs hidden-sm"><i>Welcome Came To Mocco Shopping Stores</i></p>
+				</div>
+			</div>
+		</nav>
+		<div class="container-fluid lazyloading" style="padding: 0px;" id="content">
+			<!-- <canvas style="width:100%;height: 400px;"></canvas> -->
+			<div class="container-fluid" style="width:100%;margin: 0px;padding: 0px;">
+				<div id="carousel-bts-num" class="carousel slide" data-ride="carousel" data-interval="3000">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-bts-num" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-bts-num" data-slide-to="1"></li>
+						<li data-target="#carousel-bts-num" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<a href="#"><img src="img/未标题-4.jpg" alt="" width="100%" height="10%"></a>
+
+						</div>
+						<div class="item">
+							<a href="#"><img src="img/22.jpg" alt="" width="100%" height="10%"></a>
+
+						</div>
+						<div class="item">
+							<a href="#"><img src="img/21.jpg" alt="" width="100%" height="10%"></a>
+
+						</div>
+					</div>
+					<a href="#carousel-bts-num" class="left carousel-control" data-slide="prev" role="button"><span class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous</span></a>
+					<a href="#carousel-bts-num" class="right carousel-control" data-slide="next" role="button"><span class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next</span></a>
+				</div>
+			</div>
+			<div class="container lazyloading" id="PageOne">
+				<div class="alert alert-warning alert-dismissible" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+					<strong>公告！！！</strong>iPhone 7 即将上市...
+				</div>
+
+				<div class="row" id="rowOne">
+					<div class="col-md-12">
+						<div class="container-fluid" id="Toggle">
+							<ul class="nav nav-pills" role="tablist" id="NavPill">
+								<li role="presentation" id="width-li" class="active">
+									<a href="#tog1" role="tab" data-toggle="tab"><i class="fa fa-align-right fa-fw"></i>手机介绍</a>
+								</li>
+								<li role="presentation" id="width-li">
+									<a href="#tog2" role="tab" data-toggle="tab"><i class="fa fa-align-justify fa-fw"></i> 平板电脑</a>
+								</li>
+								<li role="presentation" id="width-li">
+									<a href="#tog3" role="tab" data-toggle="tab"><i class="fa fa-database fa-fw"></i> 购物中心</a>
+								</li>
+								<li role="presentation" id="width-li">
+									<a href="#tog4" role="tab" data-toggle="tab"><i class="fa fa-paper-plane fa-fw"></i> 电脑热榜</a>
+								</li>
+								<li role="presentation" id="width-li">
+									<a href="#tog5" role="tab" data-toggle="tab"><i class="fa fa-info-circle fa-fw"></i> 品牌专卖</a>
+								</li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane fade in active" role="tabpanel" id="tog1">
+									<div class="table-responsive">
+										<div id="img1">
+											<img src="img/shopImg.jpg"><br>
+											<span>123123</span>
+										</div>
+										<div id="img1">
+											<img src="img/shopImg.jpg"><br>
+											<span>123123</span>
+										</div>
+										<div id="img1">
+											<img src="img/shopImg.jpg"><br>
+											<span>123123</span>
+										</div>
+										<div id="img1">
+											<img src="img/shopImg.jpg"><br>
+											<span>123123</span>
+										</div>
+										<div id="img1">
+											<img src="img/shopImg.jpg"><br>
+											<span>123123</span>
+										</div>
+										<div id="img1">
+											<img src="img/shopImg.jpg"><br>
+											<span>123123</span>
+										</div>
+										<div id="img1">
+											<img src="img/shopImg.jpg"><br>
+											<span>123123</span>
+										</div>
+										<div id="img1">
+											<img src="img/shopImg.jpg"><br>
+											<span>123123</span>
+										</div>
+										<div id="img1">
+											<img src="img/shopImg.jpg"><br>
+											<span>123123</span>
+										</div>
+										<div id="img1">
+											<img src="img/shopImg.jpg"><br>
+											<span>123123</span>
+										</div>
+
+									</div>
+								</div>
+								<div class="tab-pane fade" role="tabpanel" id="tog2">
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="row">
+												<div class="col-sm-4">
+													<div id="phone1">
+														<img src="img/des_big.jpg">
+													</div>
+												</div>
+												<div class="col-sm-8">
+
+													<div id="phone1-worlds">
+														<h4>平板电脑</h4>
+														<p>文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</p>
+														<span><img src="img/money.jpg"></span><br><br>
+														<span>评论
+														<img src="img/collection.jpg">
+														<img src="img/collection.jpg">
+														<img src="img/collection.jpg">
+														<img src="img/collection.jpg">
+														<span style="font-size: 10px;">(21条)</span>
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-sm-4">
+													<div id="phone1">
+														<img src="img/des_big.jpg">
+													</div>
+												</div>
+												<div class="col-sm-8">
+													<div id="phone1-worlds">
+														<h4>平板电脑</h4>
+														<p>文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</p>
+														<span><img src="img/money.jpg"></span><br><br>
+														<span>评论
+														<img src="img/collection.jpg">
+														<img src="img/collection.jpg">
+														<img src="img/collection.jpg">
+														<img src="img/collection.jpg">
+														<span style="font-size: 10px;">(21条)</span>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="row">
+												<div class="col-sm-4">
+													<div id="phone1">
+														<img src="img/des_big.jpg">
+													</div>
+												</div>
+												<div class="col-sm-8">
+													<div id="phone1-worlds">
+														<h4>平板电脑</h4>
+														<p>文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</p>
+														<span><img src="img/money.jpg"></span><br><br>
+														<span>评论
+														<img src="img/collection.jpg">
+														<img src="img/collection.jpg">
+														<img src="img/collection.jpg">
+														<img src="img/collection.jpg">
+														<span style="font-size: 10px;">(21条)</span>
+														</span>
+													</div>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-sm-4">
+													<div id="phone1">
+														<img src="img/des_big.jpg">
+													</div>
+												</div>
+												<div class="col-sm-8">
+													<div id="phone1-worlds">
+														<h4>平板电脑</h4>
+														<p>文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍文字介绍</p>
+														<span><img src="img/money.jpg"></span><br><br>
+														<span>评论
+														<img src="img/collection.jpg">
+														<img src="img/collection.jpg">
+														<img src="img/collection.jpg">
+														<img src="img/collection.jpg">
+														<span style="font-size: 10px;">(21条)</span>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" role="tabpanel" id="tog3">
+									<div class="row">
+										<div class="col-sm-4">
+											<div>
+												<p class="h3">加入购物车</p>
+												<a href="#" class="btn btn-default" role="button">加入</a>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div>
+												<p class="h3">加入收藏夹</p>
+												<a href="#" class="btn btn-default" role="button">收藏</a>
+											</div>
+										</div>
+										<div class="col-sm-4">
+											<div>
+												<p class="h3">了解等多</p>
+												<a href="#" class="btn btn-default" role="button">More</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" role="tabpanel" id="tog4">
+									<div class="panel panel-success">
+										<div class="panel-heading">好评度排行榜</div>
+										<div class="panel-body">
+											根据各大品牌电脑用户的口碑，使用便捷度，功能是否全面而总结的排行榜...
+										</div>
+										<div class="list-group">
+											<a class="list-group-item">苹果Apple<span class="badge">1</span></a>
+											<a class="list-group-item">联想lenovo-IBM<span class="badge">2</span></a>
+											<a class="list-group-item">惠普HP<span class="badge">3</span></a>
+											<a class="list-group-item">戴尔DELL<span class="badge">4</span></a>
+											<a class="list-group-item">方正Founde<span class="badge">5</span></a>
+											<a class="list-group-item">神舟HASEE<span class="badge">6</span></a>
+											<a class="list-group-item">宏碁Acer<span class="badge">7</span></a>
+											<a class="list-group-item">华硕ASUS<span class="badge">8</span></a>
+											<a class="list-group-item">海尔Haier<span class="badge">9</span></a>
+											<a class="list-group-item">TCL电脑<span class="badge">10</span></a>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" role="tabpanel" id="tog5">
+									<div class="row">
+										<div class="col-sm-3" style="background: rgba(161,170,172,0.5);">
+											<p class="h2">苹果Apple专卖</p>
+											<p class="h5">Course construction</p>
+											<p class="h3">1976年美国</p>
+											<p class="h3">世界品牌500强</p>
+											<p class="h3">全球100公司最受尊重公司之一</p>
+											<p class="h3">Apple公司</p>
+											<a href="#" class="btn btn-success">进店</a>
+										</div>
+										<div class="col-sm-3" style="background: rgba(114,118,114,0.5);">
+											<p class="h2">联想lenovo专卖</p>
+											<p class="h5">Course construction</p>
+											<p class="h3">1984年北京</p>
+											<p class="h3">中国驰名商标</p>
+											<p class="h3">十大PC品牌电脑,联想lenovo集团</p>
+											<p class="h3">联想集团</p>
+											<a href="#" class="btn btn-success">进店</a>
+										</div>
+										<div class="col-sm-3" style="background: rgba(58,59,58,0.5);">
+											<p class="h2">戴尔DELL</p>
+											<p class="h5">Course construction</p>
+											<p class="h3">1984年美国</p>
+											<p class="h3">十大品牌电脑</p>
+											<p class="h3">全球500强，最受仰慕的公司之一</p>
+											<p class="h3">戴尔公司</p>
+											<a href="#" class="btn btn-success">进店</a>
+										</div>
+										<div class="col-sm-3" style="background:rgba(15,15,15,0.5)">
+											<p class="h2">华硕ASUS</p>
+											<p class="h5">Course construction</p>
+											<p class="h3">1989年台湾</p>
+											<p class="h3">十大品牌机</p>
+											<p class="h3">全球500强企业，全球IT100强企业</p>
+											<p class="h3">华硕集团</p>
+											<a href="#" class="btn btn-success">进店</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="row lazyloading" id="rowFour">
+					<div class="jumbotron">
+						<p class="h1">苹果电脑</p>
+						<div class="row">
+							<div class="col-md-4" style="border-right: 4px solid #080808;">
+								<img src="img/backgroung1.jpg">
+							</div>
+							<div class="col-md-8">
+								<p class="h2">苹果笔记本，实用性很差，尤其是软件部份,性价比一般，它得价格差异在国外和国内.</p>
+								<p class="h5">实用性： 1、你必须懂得系统，不管甚麼系统，得精通，否则入门mac难。 mac不是那麼容易玩懂，必须懂得电脑启动过程，网络如何连接以及搭建。 2、它支持得都是dmg运行，你接触得只是exe，它不能玩游戏，在中国几乎没有游戏是可以在mac下运行。 3、你可以拿它做设计，那是这个系统最完美得。 4、mac电脑下mac系统才是运行得最完美，不要妄想双系统，xp在mac下，是侮辱。 5、我个人一直在用它，但是还在学习，昨天宽带安装，自己才知道，mac有mac地址得
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="row lazyloading" id="PageThree">
+					<div class="container">
+						<div class="col-md-12">
+							<div id="last">
+								<ul id="last-menu">
+									<li>慕课简介 |</li>
+									<li>慕课公告 |</li>
+									<li>招纳贤士 |</li>
+									<li>联系我们 |</li>
+									<li>客服热线：400-675-1234</li>
+								</ul>
+								<br><br>
+								<span>Copyright © 2006 - 2014 慕课版权所有   京ICP备09037834号   京ICP证B1034-8373号   某市公安局XX分局备案编号：123456789123</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-2.2.0.min.js" type="text/javascript"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/lazyFade.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("body .lazyloading").lazyFade({
+					reverse: false,
+					duration: 250,
+					delay: 400,
+					opacity: {
+						start: 0.01,
+						end: 1
+					}
+				});
+			})
+		</script>
+	</body>
+
+</html>

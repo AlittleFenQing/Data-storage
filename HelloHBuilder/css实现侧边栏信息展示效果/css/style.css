@@ -1,0 +1,44 @@
+ul{
+	list-style: none;
+	padding-left:0;
+}
+#sidebar{
+	padding-top: 100px;
+    width: 35px;
+    position: absolute;
+    left: 0;
+    background-color: #e1e1e1;
+    min-height: 100%;
+    z-index: 100;
+}
+
+.item{
+	font-size: 12px;
+	font-family: "microsoft yahei";
+	text-align: center;
+	margin-top: 5px;
+}
+
+#closeBar{
+	position: absolute;
+	bottom: 30px;
+	width: 35px;
+	text-align: center;
+	cursor: pointer;
+	z-index: 100;
+}
+.nav-content{
+	 position: absolute;
+    min-height: 100%;
+    width: 170px;
+    background-color: #e1e1e1;
+    z-index: 99;
+    text-align: center;
+    opacity: 0;
+}
+.nav-con-close{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	
+}

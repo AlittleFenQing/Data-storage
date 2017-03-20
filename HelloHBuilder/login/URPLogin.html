@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>登录Login</title>
+	<meta  charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="css/denglu.css" />
+</head>
+<body>
+	<div id="loading">
+		
+		<i class="fa fa-spinner fa-spin fa-5x"></i>
+		
+	</div>
+	<div id="Font-index">
+		
+		<p class="h1">Login System</p>
+		
+	</div>
+	<div id="User">
+		<div class="user-pic"><img id="user-pic" src="img/user-pic.jpg"/></div>
+		<form class="form">
+			<input type="text" class="text" id="e-mail" value="E-mail address" onfocus="this.value = '';" onblur="if(this.value == '') {this.value = 'E-mail address';}" >
+			<input type="password" id="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+			<div class="row">
+				<div class="col-xs-6">
+					<div class="form-group has-feedback" id="form-PassWord">
+						<label for="num01" class="sr-only">Code</label>
+						<input type="text" class="form-control" id="code" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '验证码';}"  value="验证码">
+						<span id="Code" class="sr-only">Code</span>
+					</div>	
+				</div>
+				<div class="col-xs-6" style="padding: 4px 10px;">
+					<div id="autoCode">
+						<div id="auto1"></div>
+						<div id="auto2"></div>
+						<div id="auto3"></div>
+						<div id="auto4"></div>
+					</div>
+				</div>
+			</div>
+			<div id="form-group">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox">
+						<p>记住密码</p>
+					</label>
+				</div>
+			</div>
+			<div class="form-group" id="login">
+				<a href="URP/index.html" class="btn btn-default" role="button"><i class="fa fa-check"></i> 登录 </a>
+				<a href="#" class="btn btn-link" role="button">忘记密码</a>
+			</div>
+		</form>
+	</div>
+	<div id="large-header" style="position: fixed;bottom: 0px;"><canvas id="demo-canvas"></canvas></div>
+	<script type="text/javascript" src="js/yanzhengma.js" ></script>
+	<script src="js/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/downpaopao.js"></script>
+</body>
+</html>

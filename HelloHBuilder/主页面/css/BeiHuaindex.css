@@ -1,0 +1,382 @@
+#User{
+	position: fixed;
+	width: 380px;
+	top: 15%;
+	right: -380px;
+	background: rgba(0,0,0,0.85);
+	z-index: 1000;
+	padding: 15px 55px;
+	transition:right 1s ease;
+}
+#User>.h2{
+	font-weight: 600;
+	color: white;
+}
+#User>form{
+	margin-top: 30px;
+}
+#form-UserName input,#form-PassWord input{
+	background: rgba(0,0,0,0);
+	border-width: 0px;
+	border-radius: 0px;
+	border-bottom: 1px solid #666666;
+	color: white;
+}
+#form-UserName input:focus,#form-PassWord input:focus{
+	box-shadow: 0px 0px 0px rgba(0,0,0,0);
+}
+#User .checkbox p{
+	color: rgba(255,255,255,0.6);
+}
+#User #login{
+	text-align: center;
+}
+#User #login button{
+	font-family: KaiTi;
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: 600;
+}
+#User #login a{
+	width: 100%;
+	margin-top: 10px;
+	border-radius: 5px;
+	border-width: 0px;
+	color: white;
+	font-weight: 600;
+}
+#User .atn-1{
+	background: #3B5999;
+}
+#User .atn-2{
+	background: #DD4B31;
+}
+#User>.slide{
+	height: 48px;
+	width: 48px;
+	position: absolute;
+	top: 0px;
+	left: -48px;
+	background: rgba(0,0,0,0.85);
+	/*background: #FA4951;*/
+	padding: 15px 17px;
+	color: rgba(255,255,255,0.75);
+}
+#User>.slide:hover{
+	cursor: pointer;
+}
+.item{
+	width: 100%;
+	height: 620px;
+}
+
+
+.btn{
+	border-radius: 20px;
+}
+.row,.alert{
+	margin-top: 25px;
+}
+.jumbotron{
+	margin-bottom: 0px;
+	box-shadow: 0px 0px 15px #222222;
+	font-family: KaiTi;
+}
+#Toggle{
+	border: 1px solid red;
+	width: 100%;
+}
+#width-li{
+	width: 220px;
+	text-align: center;
+}
+#NavPill .active a{
+	background: #455655;
+}
+#NavPill a{
+	font-size: 15px;
+}
+#img1{
+	
+	float: left;
+	margin: 10px 16px;
+}
+
+#img1 span{
+	color: rgba(0,0,0,1);
+	bottom: 0px;
+}
+#Toggle>.tab-content>.tab-pane{
+	margin-top: 20px;
+	max-height: 325px;
+}
+#PageOne>.alert{
+	background: #9ca99e;
+	color: #455655;
+}
+#tog1>div{
+	float: left;
+	height: 530px;
+}
+#tog1{
+	font-family: KaiTi;
+	font-weight: 700;
+	text-align: center;
+	text-decoration: none;
+}
+#tog1 tr>td:nth-child(1){
+	width: 80%;
+}
+#tog1 a{
+	color: black;
+}
+#tog2 .row,#tog2 div{
+	padding: 0px;
+}
+#phone1{
+	width: 80%;
+	height: 80%;
+}
+#phone1 img{
+	
+	width: 80%;
+	height: 80%;
+	
+}
+#phone1-worlds{
+	width: 100%;
+	height: 100%;
+	
+}
+#phone1-worlds h4{
+	margin-left: 90px;
+}
+#tog2>.row .col-sm-6{
+	padding: 0px;
+}
+#tog2>.row .col-sm-6>.row{
+	width: 100%;
+	height: 240px;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px black;
+	margin-left: 5px;
+	background-color: white;
+}
+#tog2>.row .col-sm-6>.row:hover{
+	box-shadow: 0px 0px 30px black inset;
+}
+#tog2>.row .col-sm-6>.row>.col-sm-4{
+	padding: 18px 0px;
+}
+#tog2>.row .col-sm-6>.row>.col-sm-4>i{
+	margin-left: 18px;
+}
+#tog2>.row .col-sm-6>.row>.col-sm-8{
+	height: 100%;
+}
+#tog3>.row{
+	box-shadow: 0px 0px 20px black;
+	background: url(../img/bg3.jpg);
+	background-size: 100% 100%;
+	font-family: KaiTi;
+	height: 100%;
+	
+}
+#tog3>.row .col-sm-4{
+	height: 520px;
+	padding: 0px;
+}
+#tog3>.row .col-sm-4>div{
+	width: 100%;height: 50%;
+	background: rgba(0,0,0,0.75);
+	position: absolute;
+	box-shadow: 0px 0px 5px black;
+}
+#tog3>.row .col-sm-4>div:hover{
+	box-shadow: 0px 0px 15px black;
+}
+#tog3>.row .col-sm-4:nth-child(2)>div{
+	bottom: 0px;
+}
+#tog3>.row .col-sm-4>div{
+	color: white;
+	text-align: center;
+}
+#tog3>.row .col-sm-4>div a{
+	background: rgba(0,0,0,0);
+	color: #A1D8B1;
+	border:3px solid #A1D8B1;
+	font-weight: 900;
+}
+#tog3>.row .col-sm-4>div a:hover{
+	background: #A1D8B1;
+	color: white;
+}
+#tog3>.row .col-sm-4 .h3{
+	margin-top: 45px;
+}
+#tog4>div{
+	width:100%;height:100%;
+}
+#tog4 a:hover{
+	z-index: 5;
+	box-shadow: 0px 0px 10px black;
+}
+#tog5>div{
+	width: 100%;
+	height: 100%;
+}
+#tog5>div>.col-sm-3{
+	font-family: KaiTi;
+	color: white;
+	padding: 20px 20px;
+	border: 1px solid white;
+	box-shadow: 0px 0px 50px #6C8E9A;
+	background: #6C8E9A;
+	border-radius: 10px;
+	height: 530px;
+	text-align: center;
+}
+#tog5>div>.col-sm-3:hover{
+	border-color: #E8D26B;
+	box-shadow: 0px 0px 20px black;
+}
+#tog5>div>.col-sm-3 a{
+	border: 3px solid #EDFCC2;
+	background: rgba(0,0,0,0);
+	color: #EDFCC2;
+	margin-top: 80px;
+}
+#tog5>div>.col-sm-3 a:hover{
+	background: #EDFCC2;
+	color: black;
+	font-family: 800;
+}
+#rowTwo img{
+	box-shadow: 0px 0px 20px black;
+}
+#rowTwo .media a{
+	text-decoration: none;
+	color: black;
+}
+#rowTwo .media:hover a{
+	text-decoration: none;
+	color: white;
+}
+#rowTwo>.col-md-8>.row{
+	padding: 0px 60px;
+	text-align: center;
+}
+#rowTwo>.col-md-8>.row>.col-sm-4{
+	padding: 20px 20px;
+	box-shadow: 0px 0px 3px black;
+}
+#rowTwo>.col-md-8>.row>.col-sm-4:hover{
+	box-shadow: 0px 0px 20px black;
+}
+#rowTwo>.col-md-4>.media{
+	color: white;
+}
+#rowTwo .media:hover{
+	box-shadow: 0px 0px 15px black;
+	background: rgba(0,0,0,0.7);
+	border-radius: 5px;
+}
+#PageTwo{
+	margin-top: 20px;
+	padding: 0px;
+	background: url(../img/yanwu.jpg);
+}
+#PageTwo>.rowOne{
+	margin: 0px;
+	
+	padding: 0px 80px;
+	background: rgba(0,0,0,0.65);
+}
+#PageTwo>.rowOne>.col-md-3{
+	background: rgba(0,0,0,0.8);
+	padding: 40px 40px;
+	text-align: center;
+}
+#PageTwo>.rowOne>.col-md-7{
+	padding: 40px 20px;
+}
+#PageTwo>.rowOne>.col-md-3>.media>.media-body{
+	padding-left: 20px;
+}
+#PageTwo>.rowOne>.col-md-3>.row{
+	margin-top: 70px;
+	margin-bottom: 100px;
+}
+#PageTwo>.rowOne>.col-md-3 p{
+	padding: 0px 30px;
+	color: white;
+	font-family: KaiTi;
+}
+#PageTwo>.rowOne>.col-md-7{
+	color: white;
+	padding: 80px 80px;
+}
+#PageTwo>.rowOne>.col-md-7 .h5{
+	line-height: 20px;
+	border-bottom: 1px solid white;
+}
+#PageTwo>.rowOne>.col-md-7 .h4{
+	line-height: 30px;
+}
+#PageThree{
+	margin: 20px 0;
+	margin-bottom: 0;
+	width: 100%;
+	padding: 0px 40px;
+	background: #222222;
+	color: white;
+	font-family: KaiTi;
+}
+#PageThree .col-md-3{
+	padding: 20px 20px;
+}
+#PageThree .col-md-5{
+	padding: 20px 20px;
+}
+#PageThree .col-md-5>div{
+	margin: 30px auto;
+}
+#rowFour>div{
+	background:rgba(156,169,158,0.3);
+	color: rgba(255,255,255,0.9);
+}
+.col-md-4 img{
+	width: 100%;
+	height: 100%;
+}
+#rowFour .col-md-8 .h2{
+	font-size: 30px;
+	margin-top: 0px;
+}
+#rowFour .col-md-8 .h5{
+	font-size: 17px;
+	font-family: ;
+}
+#rowFour a{
+	border: 3px solid #60BDAF;
+	color: #60BDAF;
+	background: rgba(0,0,0,0);
+}
+#rowFour a:hover{
+	background: #60BDAF;
+	color: white;
+}
+#last-menu li{
+	float: left;
+	list-style: none;
+	padding: 0px 7px;
+	font-size: 20px;
+}
+#last-menu {
+	margin-left: 165px;
+}
+#last span{
+	margin-left: 150px;
+}
